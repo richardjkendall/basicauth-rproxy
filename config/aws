@@ -1,0 +1,2 @@
+account required        libpam-dynamo.so        ${REGION}  ${TABLE}  ${REALM}
+auth    required        libpam-dynamo.so        ${REGION}  ${TABLE}  ${REALM}
