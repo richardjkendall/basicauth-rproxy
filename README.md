@@ -22,3 +22,7 @@ The container uses a number of environment variables to pass in configuration.  
 ### DynamoDB table
 The expected structure and content of the DynamoDB table is here https://github.com/richardjkendall/pam-dynamo
 
+## Headers
+This version strips the 'Authorization' header and does not send it to the upstream server.
+
+It does, however, set a header called 'X-Remote-User' to the %REMOTE_USER value, which is the username provided by the client.
