@@ -1,4 +1,4 @@
-FROM richardjkendall/ubuntu-pam-dynamo:latest
+FROM richardjkendall/ubuntu-pam-dynamo:22f48d5a
 
 # install apache2 and mod_authnz_pam
 RUN apt-get update -y
