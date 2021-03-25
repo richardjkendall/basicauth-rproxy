@@ -1,6 +1,7 @@
 FROM richardjkendall/ubuntu-pam-dynamo:22f48d5a
 
 # install apache2 and mod_authnz_pam
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt-get install -y apache2 libapache2-mod-authnz-pam
 
