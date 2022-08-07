@@ -1,4 +1,4 @@
-FROM richardjkendall/ubuntu-pam-dynamo:22f48d5a
+FROM richardjkendall/ubuntu-pam-dynamo:82b0a814
 
 # install apache2 and mod_authnz_pam
 ARG DEBIAN_FRONTEND=noninteractive
