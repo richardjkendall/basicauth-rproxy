@@ -1,0 +1,19 @@
+version: '3'
+services:
+  echo:
+    image: richardjkendall/echo-headers
+  basicauth:
+    build: .
+    environment: 
+      - UPSTREAM=echo:5000/
+      - REGION=ap-southeast-2
+      - TABLE=basicAuthCiTest
+      - REALM=citest
+      - CACHE_FOLDER=/tmp/cache
+      - CACHE_DURATION=120
+    links:
+      - echo
+  sut:
+    build: test
+    links:
+      - basicauth
