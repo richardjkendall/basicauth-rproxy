@@ -11,6 +11,9 @@ services:
       - REALM=citest
       - CACHE_FOLDER=/tmp/cache
       - CACHE_DURATION=120
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_DEFAULT_REGION
     links:
       - echo
   sut:
